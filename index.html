@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="card">
+              <div class="card-image">
+                  <figure class="image is-2by1">
+                      <img src="https://i.pinimg.com/originals/cf/51/9f/cf519f231ee9593f54113d1c62126ddb.gif
+                      " alt="img1.jpg">
+                  </figure>
+              </div>
+            <header class="card-header">
+              <p class="card-header-title is-size-3">Ping Pong Score Keeper</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+                <div class="select is-inline is-rounded">
+                    Playing To :
+                    <select name="" id="playTo" class="is-large">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                </div>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <h1>
+                  <span id="p1Display" class="is-1">0</span> to <span id="p2Display" class="is-1">0</span>
+                </h1>
+                <p class="subtitle">Use the buttons to update game score</p>
+              </div>
+            </div>
+            <footer class="card-footer">
+                <button class="is-primary button card-footer-item is-size-5" id="p1Button">+1 Player One</button>
+                <button class="is-light button card-footer-item is-size-5" id="p2Button">+1 Player Two</button>
+                <button class="is-dark button card-footer-item is-size-5" id="reset">Reset</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
