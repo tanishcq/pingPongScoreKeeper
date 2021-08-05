@@ -5,3 +5,14 @@
 .loser {
     color: red;
 } */
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 943px){
+    .card-footer{
+        flex-direction: column;
+    }
+}
